@@ -32,6 +32,8 @@
 		});
 
 		function formatItem(item) {
+			if (item.DiscountPrice)
+				return item.Name + ': $' + item.Price;
 			return item.Name + ': $' + item.Price;
 		}
 
